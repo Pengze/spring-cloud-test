@@ -1,0 +1,14 @@
+server:
+    port: 7777
+    spring:
+    application:
+    name:
+   spring-cloud-eureka-client
+   eureka:
+   		instance:
+   						preferIpAddress:ture
+   						instanceId:${spring.cloud.client.ipAdress}:${server.port}
+			client:
+			       serviceUrl:
+						 
+						 defaultZone: http://10.3.99.29:1111/eureka/ #注册中心
